@@ -1,22 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar artigos</title>
-</head>
-<body>
-    <header>
-        
-    </header>
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <section>
+        <script type="module" src="../scripts/fill_database.js"></script>
+        <script type="module" src="../scripts/login.js"></script>
 
-    </section>
+        <link rel="stylesheet" href="../estilos/adm_article.css">
+<!--
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
-    <footer>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+-->
+        <title>Inserir Artigos</title>
+    </head>
 
-    </footer>
-</body>
+    <body>
+        <header>
+            <div class="search-box">
+                <input type="text" name="" placeholder="Pesquisar">
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="box--title">
+                    <span>ADICIONAR ARTIGO</span>
+                </div>
+
+                <div class="box--form1">
+                    <input type="text" placeholder="TÍTULO">
+                </div>
+                <div class="box--form2">
+                    <input type="text" placeholder="CATEGORIA">
+                </div>
+                <div class="box--form3">
+                    <input type="text" placeholder="DATA">
+                </div>
+                <div class="box--form4">
+                    <input type="text" placeholder="AUTOR">
+                </div>
+
+                <div class="box--textarea">
+                    <textarea name="" id="" cols="65" rows="10"></textarea>
+                </div>
+
+                <div class="box--button">
+                    <button>PUBLICAR</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+
+        </footer>
+    </body>
 </html>
