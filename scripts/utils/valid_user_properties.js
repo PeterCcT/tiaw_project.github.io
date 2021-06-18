@@ -1,5 +1,5 @@
 export function isUserPropertiesValid(propertiesAndValues) {
-    const userProperties = ['name', 'email', 'password']
+    const userProperties = ['name', 'email', 'password', 'favoritiesArticles']
     const searchProperties = Object.keys(propertiesAndValues)
     const quantityOfSearchProperties = searchProperties.length
 
