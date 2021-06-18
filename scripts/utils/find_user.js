@@ -1,10 +1,9 @@
 import { db } from '../../scripts_db/index.js'
-console.log(db)
 import { isUserPropertiesValid } from './valid_user_properties.js'
 export function findUserByPropertieAndValue(propertiesAndValues) {
 
     let foundedUsers = []
-    const users = db.users
+    const { users } = db
     if (users) {
         const [
             isAllValidProperties,
@@ -14,7 +13,6 @@ export function findUserByPropertieAndValue(propertiesAndValues) {
 
         if (isAllValidProperties) {
             for (const user of users) {
-              console.log(user)
                 let matchedPropertiesValues = 0
                 for (const propertie in propertiesAndValues) {
                     const searchValue = propertiesAndValues[propertie]
@@ -22,6 +20,7 @@ export function findUserByPropertieAndValue(propertiesAndValues) {
                     if (userPropertieValue === searchValue)
                         matchedPropertiesValues++
                 }
+                console.log(quantityOfSearchProperties)
                 if (matchedPropertiesValues === quantityOfSearchProperties)
                     foundedUsers.push(user)
             }

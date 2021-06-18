@@ -1,4 +1,4 @@
 export function getLoggedUser() {
-    const user = sessionStorage.getItem('currentUse')
+    const user = sessionStorage.getItem('currentUser')
     return JSON.parse(user)
 }
