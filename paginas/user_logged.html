@@ -4,11 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" href="../estilos/wwa_alternative.css">
     <title>WWA - World Wide Acessibility</title>
@@ -31,8 +28,7 @@
                 <div class="col-12 col-sm-12 col-md-2 col-lg-2 tradutor">
                     <!--se estiver logado-->
                     <div class="dropdown">
-                        <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-user-circle fa-2x"></i>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -41,7 +37,7 @@
                                     Perfil</a>
                             </li>
                             <li><a class="dropdown-item" href="configuracoes.html"><i class="fas fa-user-cog"></i> Configurações</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Sair da conta</a>
+                            <li id="logOut"><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Sair da conta</a>
                             </li>
                         </ul>
                     </div>
@@ -56,8 +52,7 @@
                     <h2 class="texto_wwa">WWA</h2>
                 </div>
                 <div class="col-12 apresentacao_inicio">
-                    <p class="texto_wwa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis consectetur
-                        fugiat modi optio</p>
+                    <p class="texto_wwa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis consectetur fugiat modi optio</p>
                 </div>
             </div>
         </section>
@@ -96,12 +91,8 @@
         <div class="row">
             <div class="col-8 sobre_texto">
                 <h3 class="titulo">Sobre</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, reiciendis sequi. Quibusdam amet
-                    earum sequi molestiae cupiditate laudantium vel neque doloribus laboriosam impedit blanditiis est
-                    quia error, quaerat voluptatum adipisci.
-                    Commodi quibusdam veritatis unde deleniti. Autem fuga repellat voluptatem soluta fugiat tempora illo
-                    consequatur, laboriosam aliquid possimus corporis maiores eum dolorum eaque incidunt itaque
-                    similique labore numquam totam ut ullam!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, reiciendis sequi. Quibusdam amet earum sequi molestiae cupiditate laudantium vel neque doloribus laboriosam impedit blanditiis est quia error, quaerat voluptatum adipisci.
+                    Commodi quibusdam veritatis unde deleniti. Autem fuga repellat voluptatem soluta fugiat tempora illo consequatur, laboriosam aliquid possimus corporis maiores eum dolorum eaque incidunt itaque similique labore numquam totam ut ullam!</p>
 
             </div>
 
@@ -135,7 +126,7 @@
         </div>
     </footer>
 
-
+    <script src="/scripts/utils/logout.js"></script>
 
 </body>
 
