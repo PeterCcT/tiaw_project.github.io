@@ -12,9 +12,8 @@ window.onload = () => {
                 sessionStorage.setItem('currentUser', JSON.stringify(user))
                 alert('Login efetuado com sucesso!')
                 console
-                window.location.href = 'index.html'
-            }
-            else {
+                window.location.href = 'user_logged.html'
+            } else {
                 alert('Usuário não encontrado!\nEmail ou senha incorretos')
             }
 
