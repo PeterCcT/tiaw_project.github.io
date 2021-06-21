@@ -1,7 +1,5 @@
 import { db } from '../scripts_db/index.js'
-import { validate_userPassword } from '../scripts/validators/password.js'
-import { searchNameInDataBase } from '../scripts/utils/search_name_db'
-import { searchEmailInDataBase } from '../scripts/utils/search_email_db'
+import { validateUserEmail, validateUserName, validateUserPassword } from './validators/validate_user_data.js'
 
 window.onload = () => {
 
@@ -21,30 +19,16 @@ window.onload = () => {
     }
 
     // VALIDATION FUNCTIONS
-    function validate_userName(user_name) {
-        let regex = /^(?=[a-zA-Z0-9_]{3,20}$)(?!.*[_.]{2})[^_.].*[^_.]$/;
-        return regex.test(user_name);
+
+    function checkData() {
+        const isUserEmailValidate = validateUserEmail(user_email.value);
+        const isUserNameValidade = validateUserName(user_name.value);
+        const isUserPasswordValidate = validateUserPassword(user_password.value);
+        const isConfirmPasswordValidate = user_password.value === user_passwordConfirm.value;
+        return isUserEmailValidate && isUserNameValidade && isUserPasswordValidate && isConfirmPasswordValidate;
     }
 
-    function validate_userEmail(user_email) {
-        let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-        return regex.test(user_email);
-    }
 
-    db.users.push(user);
-    localStorage.setItem("users", JSON.stringify(db));
-
-    disable_registerButton();
-
-    userName_check = false;
-    userEmail_check = false;
-    userPassword_check = false;
-    userConfirmPassword_check = false;
-
-    user_name.value = '';
-    user_email.value = '';
-    user_password.value = '';
-    user_passwordConfirm.value = '';
     alert(`Requisitos para cadastrar usuário:
             Nome de usuário:
                     - mínimo de 3 Caracteres;
@@ -60,32 +44,39 @@ window.onload = () => {
 
 
     user_name.oninput = () => {
-        userName_check = validate_userName(userName.value);
-
-
-        if (checkData()) return enable_registerButton();
-        else return disable_registerButton();
+        const isValidData = checkData()
+        if (isValidData) {
+            enable_registerButton();
+        } else {
+            disable_registerButton();
+        }
     }
 
     user_email.oninput = () => {
-        userEmail_check = validate_userEmail(userEmail.value);
-
-        if (checkData()) return enable_registerButton();
-        else return disable_registerButton();
+        const isValidData = checkData()
+        if (isValidData) {
+            enable_registerButton();
+        } else {
+            disable_registerButton();
+        }
     }
 
     user_password.oninput = () => {
-        userPassword_check = validate_userPassword(user_password.value);
-
-        if (checkData()) return enable_registerButton();
-        else return disable_registerButton();
+        const isValidData = checkData()
+        if (isValidData) {
+            enable_registerButton();
+        } else {
+            disable_registerButton();
+        }
     }
 
     user_passwordConfirm.oninput = () => {
-        userConfirmPassword_check = (user_password.value == user_passwordConfirm.value);
-
-        if (checkData()) return enable_registerButton();
-        else return disable_registerButton();
+        const isValidData = checkData()
+        if (isValidData) {
+            enable_registerButton();
+        } else {
+            disable_registerButton();
+        }
     }
 
 
@@ -94,25 +85,18 @@ window.onload = () => {
     */
 
     register_button.onclick = () => {
-
         let user = {
-            name: userName.value,
-            email: userEmail.value,
+            name: user_name.value,
+            email: user_email.value,
             password: user_password.value
         }
 
+        const { users } = db;
+        users.push(user);
+        localStorage.setItem("users", JSON.stringify(users));
+        alert('Cadastro realizado com sucesso');
+        window.location.href = 'index.html';
     }
 
     disable_registerButton();
-
-    userName_check = false;
-    userEmail_check = false;
-    userPassword_check = false;
-    userConfirmPassword_check = false;
-
-    userName.value = '';
-    userEmail.value = '';
-    user_password.value = '';
-    user_passwordConfirm.value = '';
-
 }
