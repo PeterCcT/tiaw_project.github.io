@@ -32,6 +32,7 @@ const db = {
 
 if (users) {
     db.users = JSON.parse(users)
+    db.articles = JSON.parse(articles)
 }
 
 export { db }
