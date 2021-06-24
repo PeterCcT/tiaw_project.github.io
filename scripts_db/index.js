@@ -1,4 +1,5 @@
 const users = localStorage.getItem('users')
+const articles = localStorage.getItem('articles')
 
 const db = {
     users: [{
@@ -32,6 +33,10 @@ const db = {
 
 if (users) {
     db.users = JSON.parse(users)
+}
+
+if(articles) {
+    db.articles = JSON.parse(articles)
 }
 
 export { db }
