@@ -10,7 +10,7 @@ function enable_registerButton() {
 
 function inserirArtigo() {
     
-    const id_article = Math.floor(Math.random() * 10000 + 1);
+    const id_article = db.articles.length + 1;
     const author_article = document.getElementById('author_article').value;
     const data_article = document.getElementById('data_article').value;
     const title_article = document.getElementById('title_article').value;
@@ -28,6 +28,8 @@ function inserirArtigo() {
 
     db.articles.push(article);
     localStorage.setItem('dbArticles', JSON.stringify(db.articles));
+
+    disable_registerButton();
 
     document.getElementById('author_article').value = '';
     document.getElementById('data_article').value = '';
@@ -58,27 +60,22 @@ localStorage.setItem('dbArticles', JSON.stringify(db));
 
 author_article.oninput = () => {
     if(checkData())     enable_registerButton();
-    else                disable_registerButton();
 }
 
 data_article.oninput = () => {
     if(checkData())     enable_registerButton();
-    else                disable_registerButton();
 }
 
 title_article.oninput = () => {
     if(checkData())     enable_registerButton();
-    else                disable_registerButton();
 }
 
 category_article.oninput = () => {
     if(checkData())     enable_registerButton();
-    else                disable_registerButton();
 }
 
 content_article.oninput = () => {
     if(checkData())     enable_registerButton();
-    else                disable_registerButton();
 }
 
 document.getElementById('btn_publicar').addEventListener('click', inserirArtigo);
