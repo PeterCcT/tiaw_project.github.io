@@ -1,4 +1,5 @@
 import { db } from '../scripts_db/index.js'
+import { create_UUID } from '../scripts/utils/create_uuid.js'
 
 function disable_registerButton() {
     btn_publicar.setAttribute('disabled', true);
@@ -10,7 +11,7 @@ function enable_registerButton() {
 
 function inserirArtigo() {
     
-    const id_article = db.articles.length + 1;
+    const id_article = create_UUID();
     const author_article = document.getElementById('author_article').value;
     const data_article = document.getElementById('data_article').value;
     const title_article = document.getElementById('title_article').value;
@@ -27,7 +28,7 @@ function inserirArtigo() {
     }
 
     db.articles.push(article);
-    localStorage.setItem('dbArticles', JSON.stringify(db.articles));
+    localStorage.setItem('articles', JSON.stringify(db.articles));
 
     disable_registerButton();
 
@@ -55,8 +56,6 @@ function checkData() {
 
 
 disable_registerButton();
-
-localStorage.setItem('dbArticles', JSON.stringify(db));
 
 author_article.oninput = () => {
     if(checkData())     enable_registerButton();
