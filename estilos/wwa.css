@@ -1,13 +1,13 @@
 body {
-    background: rgb(231, 226, 226);
+    background: rgb(196, 226, 255) !important;
 }
 
 .fundo {
-    background: rgb(71, 166, 255);
+    background: rgb(63, 152, 236);
 }
 
 .header {
-    background   : rgb(71, 166, 255);
+    background   : rgb(63, 152, 236);
     height       : x;
     top          : 0;
     padding      : 0;
@@ -32,12 +32,15 @@ body {
 }
 
 .nav-item {
-    border          : 1px solid rgb(52, 134, 211) !important;
-    background-color: rgba(253, 249, 249, 0.918);
+    border          : 1px solid rgb(67, 149, 226) !important;
     border-radius   : 50px;
     margin          : 5px;
     text-decoration : none;
     color           : inherit
+}
+
+.active{
+    background-color: rgb(47, 128, 204) !important;
 }
 
 .tradutor {
@@ -59,7 +62,7 @@ body {
 .texto_wwa {
     background-color: rgb(71, 166, 255);
     padding         : 30px;
-    border-radius   : 25px;
+
 }
 
 .btn {
@@ -69,8 +72,12 @@ body {
 
 
 .inicio {
-    background-color: rgb(223, 239, 255);
-    height          : 500px;
+    background-image: url("../World\ Wide\ Acessibility.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+
 }
 
 
@@ -92,23 +99,33 @@ body {
 
 .interface2__ {
     margin-top   : 30px;
-    background   : rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(35, 200, 241), rgb(196, 226, 255));
     margin-bottom: 40px !important;
 }
 
 .artigos {
-    background-color: white;
+    background-image: url(/artigo3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     padding-top     : 80px;
     padding-bottom  : 80px;
     border-radius   : 50px;
 }
 
 .artigos_ {
-    background-color: white;
-    padding-top     : 80px;
+    background-image: url(/artigo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top     : 60px;
     padding-bottom  : 80px;
     border-radius   : 50px;
-    margin-bottom   : 30px;
+    margin-bottom   : 20px;
+}
+
+.texto_acessibility{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .artigos a,
@@ -145,7 +162,7 @@ body {
 .sobre {
     margin-top      : 50px;
     margin-bottom   : 50px;
-    background-color: rgb(135, 194, 250);
+    background-image: linear-gradient(rgb(35, 200, 241), rgb(196, 226, 255));
 }
 
 .sobre_texto {
@@ -212,5 +229,12 @@ body {
 
 
 
+
+}
+
+@media screen and(max-width: 1199px){
+    .but_registro .but_registro .but_registro{
+        display: none !important;
+    }
 
 }
