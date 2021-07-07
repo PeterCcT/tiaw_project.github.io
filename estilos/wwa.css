@@ -190,7 +190,7 @@ main h1 {
         height: 100%;
     }
     .bannerHome {
-        background-image: url(../imagens/t.jpg);
+        background-image: url(https://cdn.discordapp.com/attachments/834529037614317618/860632425919152188/t.jpg);
         background-size: cover;
         background-position: fixed;
         background-repeat: no-repeat;
@@ -200,7 +200,7 @@ main h1 {
 
 @media screen and (max-width: 700px) {
     .bannerHome {
-        background-image: url(../imagens/t.jpg);
+        background-image: url(https://cdn.discordapp.com/attachments/834529037614317618/860632425919152188/t.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -210,7 +210,7 @@ main h1 {
 
 @media screen and (max-width: 360px) {
     .bannerHome {
-        background-image: url(../imagens/t.jpg);
+        background-image: url(https://cdn.discordapp.com/attachments/834529037614317618/860632425919152188/t.jpg);
         background-position: relative;
         -webkit-background-size: cover;
         -moz-background-size: cover;
