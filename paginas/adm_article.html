@@ -1,58 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/adm_article.css">
+</head>
 
-        <script type="module" src="../scripts/fill_database.js"></script>
-        <script type="module" src="../scripts/login.js"></script>
+<body>
+    <header>
+        <div class="container">
+            <img src="../imagens/logo_wwa_cortado.png" alt="Logo WWA">
+            <nav>
+                <ul>
+                    <li id="pagina1"><a href="#">MOTIVOS</a></li><li id="pagina2"><a href="#">ARTIGOS</a></li><li id="pagina3"><a href="#">SOBRE</a></li><li id="pagina4"><a href="#">HOME</a></li>
+                </ul>
+            </nav>
+            <button>LOGIN</button>
+        </div>
+    </header>
 
-        <link rel="stylesheet" href="../estilos/adm_article.css">
-        
-        <title>Inserir Artigos</title>
-    </head>
-
-    <body>
-        <header>
-            <div class="search-box">
-                <input type="text" name="" placeholder="Pesquisar">
-            </div>
-        </header>
-
+    <main>
         <section>
-            <div class="container">
-                <div class="box--title">
-                    <span>ADICIONAR ARTIGO</span>
-                </div>
-
-                <div class="box--form1">
+            <div class="title_form">
+                <h2>ADICIONAR ARTIGO</h2>
+            </div>
+            <div class="box_form">
+                <!--<h2>ADICIONAR ARTIGO</h2>-->
+                <div class="form">
                     <input id="title_article" type="text" placeholder="TÍTULO">
-                </div>
-                <div class="box--form2">
                     <input id="category_article" type="text" placeholder="CATEGORIA">
-                </div>
-                <div class="box--form3">
                     <input id="data_article" type="text" placeholder="DATA">
-                </div>
-                <div class="box--form4">
                     <input id="author_article" type="text" placeholder="AUTOR">
-                </div>
-
-                <div class="box--textarea">
                     <textarea name="" id="content_article" cols="65" rows="10"></textarea>
                 </div>
-
-                <div class="box--button">
-                    <button id="btn_publicar">PUBLICAR</button>
-                </div>
+                <button id="btn_publicar">PUBLICAR</button>
             </div>
         </section>
+    </main>
 
-        <footer>
+    <footer>
+    </footer>
 
-        </footer>
-
-        <script type="module" src="../scripts/fill_database.js"></script>
-        <script type="module" src="../scripts/adm_article.js"></script>
-    </body>
+    <script type="module" src="../scripts/fill_database.js"></script>
+    <script type="module" src="../scripts/adm_article.js"></script>
+</body>
 </html>
