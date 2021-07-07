@@ -13,30 +13,29 @@
     <script type="module" src="../scripts/registro.js"></script>
     <script src="https://apis.google.com/js/api.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
 
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id" content="30909851838-pisf00kn1hf91ultbmsi7tt5si9k2a27.apps.googleusercontent.com">
-
     <title>WWA - Login</title>
 </head>
 
 <body>
-    <section class="fundo">
-        <header class="container header">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 logo">
-                    <img src="../imagens/logo_wwa.png" class="logo">
-                    <h2></h2>
+    <div class="conteudoCadastro container-fluid" style="padding-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;">
+        <div class="regrasCadastro col-7">
+            <a title="voltar pagina inicial" href="../paginas/index.html"><img src="../imagens/wwa_ícon_-_branco-removebg-preview.png" class="logo" alt=""></a>
+            <ul>
+                <div class="titulo">
+                    <h4><strong> Requisitos para cadastrar usuário:</strong></h4>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 nav">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                        </li>
-                    </ul>
-                </div>
+<<<<<<< Updated upstream
             </div>
     </section>
     </header>
@@ -80,78 +79,114 @@
 
                         </form>
                     </div>
+=======
+                <div class="regrasUsuario">
+                    <h5><strong> Nome de usuário:</strong></h5>
+                    <li>mínimo de 3 Caracteres;</li>
+                    <li>máximo de 20 Caracteres;</li>
+                    <li>não utilizar Caracteres especiais no final do nome;</li>
+>>>>>>> Stashed changes
                 </div>
-            </div>
+                <h5><strong>Senha:</strong></h5>
+                <li>mínimo de 8 Caracteres;</li>
+                <li>pelo menos 1 Número;</li>
+                <li>pelo menos 1 Letra maiúscula;</li>
+                <li>pelo menor 1 Letra minúscula;</li>
+                <li>pelo menos 1 Caractere especial;</li>
+            </ul>
         </div>
-    </div>
 
-    <footer class="rodape">
-        <div class="container footer">
-            <div class="row">
-                <div class="col-12 texto_footer">
+        <div class="cadastroInformacoes col-5">
+            <form id="loginForm" class="form" action="" method="post">
+                <h4 class="text-center"><strong>Junte-se ao time</h4></strong>
 
-                </div>
-            </div>
+                    <div class="conteudoFormulario">
+                        <div class="form-group">
+                            <label for="user_name">Nome de usuário:</label><br>
+                            <input id="user_name" name="user_name" type="text" class="form-control" autocomplete="off">
+                        </div>
+
+                        <div class="form-group" style="background: transparent;">
+                            <label for="user_email">E-mail:</label><br>
+                            <input id="user_email" name="user_email" type="email" class="form-control" autocomplete="off">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user_password">Senha:</label><br>
+                            <input id="user_password" name="user_password" type="password" class="form-control" autocomplete="off">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user_passwordConfirm">Confirmar senha:</label><br>
+                            <input id="user_passwordConfirm" name="user_passwordConfirm" type="password" class="form-control" autocomplete="off">
+                        </div>
+
+                        <div class="form-group">
+                            <button id="register_button" type="button" class="btn btn-lg">Cadastrar</button>
+                        </div>
+                    </div>
+
+
+            </form>
         </div>
-    </footer>
 
-    <script>
-        function onSuccess(googleUser) {
-            let resposta = confirm(`Logado com sucesso. Bem vindo, ${googleUser.getBasicProfile().getName()}!\nQuer ser redirecionado para o site principal?`)
-            if (resposta == true)
-                window.location.replace("https://tiawsprint01.pedrohenriqu659.repl.co/index.html");
+        <script>
+            function onSuccess(googleUser) {
+                let resposta = confirm(`Logado com sucesso. Bem vindo, ${googleUser.getBasicProfile().getName()}!\nQuer ser redirecionado para o site principal?`)
+                if (resposta == true)
+                    window.location.replace("https://tiawsprint01.pedrohenriqu659.repl.co/index.html");
 
-            console.log('Logado como: ' + googleUser.getBasicProfile().getName());
+                console.log('Logado como: ' + googleUser.getBasicProfile().getName());
 
-            var db = {
-                users: [{
-                    name: "Teste",
-                    email: "Teste@hotmail.com",
-                    password: "#"
-                }]
-            };
+                var db = {
+                    users: [{
+                        name: "Teste",
+                        email: "Teste@hotmail.com",
+                        password: "#"
+                    }]
+                };
 
-            let userGoogle = {
-                name: googleUser.getBasicProfile().getName(),
-                email: googleUser.getBasicProfile().getEmail(),
-                password: '#',
+                let userGoogle = {
+                    name: googleUser.getBasicProfile().getName(),
+                    email: googleUser.getBasicProfile().getEmail(),
+                    password: '#',
+                }
+
+                db.users.push(userGoogle);
+                localStorage.setItem("users", JSON.stringify(db));
             }
 
-            db.users.push(userGoogle);
-            localStorage.setItem("users", JSON.stringify(db));
-        }
+            function onFailure(error) {
+                alert('Ocorreu um problema. Tente novamente')
+                console.log(error);
+            }
 
-        function onFailure(error) {
-            alert('Ocorreu um problema. Tente novamente')
-            console.log(error);
-        }
-
-        function renderButton() {
-            gapi.signin2.render('my-signin2', {
-                'scope': 'profile email',
-                'width': 240,
-                'height': 50,
-                'longtitle': true,
-                'theme': 'dark',
-                'onsuccess': onSuccess,
-                'onfailure': onFailure
-            });
+            function renderButton() {
+                gapi.signin2.render('my-signin2', {
+                    'scope': 'profile email',
+                    'width': 240,
+                    'height': 50,
+                    'longtitle': true,
+                    'theme': 'dark',
+                    'onsuccess': onSuccess,
+                    'onfailure': onFailure
+                });
 
 
-        }
-    </script>
+            }
+        </script>
 
-    <script>
-        function onSignIn(googleUser) {
-            var profile = googleUser.getBasicProfile();
-            console.log('ID: ' + profile.getId());
-            console.log('Name: ' + profile.getName());
-            console.log('Image URL: ' + profile.getImageUrl());
-            console.log('Email: ' + profile.getEmail());
-        }
-    </script>
+        <script>
+            function onSignIn(googleUser) {
+                var profile = googleUser.getBasicProfile();
+                console.log('ID: ' + profile.getId());
+                console.log('Name: ' + profile.getName());
+                console.log('Image URL: ' + profile.getImageUrl());
+                console.log('Email: ' + profile.getEmail());
+            }
+        </script>
 
-    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+        <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>
 
 </html>

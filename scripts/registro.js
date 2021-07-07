@@ -8,14 +8,13 @@ window.onload = () => {
     // REGISTER_BUTTON FUNCTIONS
     function enable_registerButton() {
         register_button.removeAttribute('disabled');
-        register_button.style.background = '#007bff';
-        register_button.style.border = '#007bff'
+        register_button.style.background = 'white';
+        register_button.style.border = '#007bff';
+        register_button.style.color = 'black';
     }
 
     function disable_registerButton() {
         register_button.setAttribute('disabled', true);
-        register_button.style.background = 'gray';
-        register_button.style.border = '#3a3a3a'
     }
 
     // VALIDATION FUNCTIONS
@@ -27,20 +26,6 @@ window.onload = () => {
         const isConfirmPasswordValidate = user_password.value === user_passwordConfirm.value;
         return isUserEmailValidate && isUserNameValidade && isUserPasswordValidate && isConfirmPasswordValidate;
     }
-
-
-    alert(`Requisitos para cadastrar usuário:
-            Nome de usuário:
-                    - mínimo de 3 Caracteres;
-                    - máximo de 20 Caracteres;
-                    - não utilizar Caracteres especiais no final do nome;
-
-            Senha:
-                    - mínimo de 8 Caracteres;
-                    - pelo menos 1 Número;
-                    - pelo menos 1 Letra maiúscula;
-                    - pelo menor 1 Letra minúscula;
-                    - pelo menos 1 Caractere especial;`);
 
 
     user_name.oninput = () => {
