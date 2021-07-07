@@ -1,0 +1,295 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    background-color: #0A122A;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100vw;
+    height: 15vh;
+    min-height: 30px;
+    max-height: 80px;
+
+    overflow: auto;
+}
+
+header .container {
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80vw;
+    height: 15vh;
+    min-height: 30px;
+    max-height: 80px;
+
+    overflow: auto;
+}
+
+header .container img {
+    max-height: 30px;
+}
+
+header .container nav ul {
+    display: flex;
+    text-align: center;
+}
+
+header .container nav ul #pagina4
+{
+    display: none;
+}
+
+header .container nav ul li {
+    background-color: transparent;
+    margin: 5px;
+    border: none;
+}
+
+header .container nav ul li a {
+    display: block;
+    font-size: 1.2rem;
+    padding: 10px;
+    color: white;
+}
+
+header .container button {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+main section {
+    margin-top: 4vh;
+}
+
+main section .title_form {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+main section .title_form h2 {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 3px;
+    border: solid 5px #0A122A;
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+}
+
+main section .box_form {
+    display: block;
+    background-color: #0A122A;
+    height: 100%;
+    width: 60vw;
+    margin: auto;
+
+    border-radius: 30px;
+    overflow: auto;
+}
+
+main section .box_form .form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section .box_form .form input {
+    width: 80%;
+    /*max-width: 1000px;*/
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+main section .box_form .form #title_article {
+    margin-top: 35px;
+}
+
+main section .box_form textarea {
+    height: 13em;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-top: 10px
+}
+
+main section .box_form button {
+    display: block;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 7px;
+    border: solid 1px #0A122A;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #EFEFEF;
+}
+
+main section .box_form button:hover {
+    background-color: #bdbcbc;
+}
+
+@media (max-width: 370px) {
+
+    header .container nav ul li
+    {
+        display: none;
+    }
+    header .container nav ul #pagina4
+    {
+        display: flex;
+    }
+}
+
+@media (max-width: 561px) {
+
+    header {
+        overflow: visible;
+        height: 20vh;
+        min-height: 30px;
+        max-height: 20vh;
+    }
+
+    header .container {
+        overflow: visible;
+    }
+
+    header .container img {
+        display: block;
+        margin: auto;
+        margin-top: 1vh;
+    }
+
+    header .container img {
+        display: block;
+        margin: auto;
+        margin-top: 0.5vh;
+    }
+
+    header .container nav {
+        display: block;
+        margin: auto;
+        margin-top: 2.5vh;
+        width: 100vw;
+    }
+
+    header .container nav ul {
+        justify-content: center;
+    }
+
+    header .container button {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    main section .title_form {
+        background-color: #0A122A;
+        padding-top: 5px;
+    }
+
+    main section .title_form h2 {
+        border-radius: 2px;
+    }
+
+    main section .box_form {
+        display: block;
+        background-color: #0A122A;
+        height: 100%;
+        width: 100vw;
+        margin: auto;
+        
+        border-radius: 0;
+        overflow: auto;
+    }
+}
+
+@media (max-height: 500px) {
+    header .container nav ul li
+    {
+        display: none;
+    }
+    header .container nav ul #pagina4
+    {
+        display: none;
+    }
+}
+
+@media (max-height: 570px) {
+    main section .box_form textarea {
+        height: 7em;
+    }
+}
+
+@media (min-height: 670px) {
+    main section .box_form textarea {
+        height: 16em;
+    }
+}
+
+@media (min-height: 720px) {
+    main section .box_form textarea {
+        height: 18em;
+    }
+}
+
+@media (min-height: 780px) {
+    main section .box_form textarea {
+        height: 21em;
+    }
+}
+
+@media (min-height: 800px) {
+    main section .box_form textarea {
+        height: 25em;
+    }
+}
+
+@media (min-height: 800px) {
+    main section .box_form textarea {
+        height: 28em;
+    }
+}
+
+@media (min-height: 950px) {
+    main section .box_form textarea {
+        height: 33em;
+    }
+}
+
+@media (min-height: 1000px) {
+    main section .box_form textarea {
+        height: 38em;
+    }
+}
+
+
