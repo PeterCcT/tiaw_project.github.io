@@ -1,6 +1,6 @@
 import { searchEmailInDataBase } from '../scripts/utils/search_email_db.js'
 import { updateUserDb } from '../scripts/utils/update_db.js'
-import { validate_userPassword } from '../scripts/validators/password.js'
+import { validate_userPassword } from '../scripts/validators/validate_user_data'
 
 window.onload = () => {
     forgotPasswordForm.onsubmit = (ev) => {
