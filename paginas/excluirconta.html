@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,108 +10,49 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-    <link rel="stylesheet" href="../estilos/wwa_alternative.css">
-
-
-    <section class="fundo">
-        <header class="container header">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-2 col-lg-2 logo">
-                    <img src="../imagens/logo_wwa.png" class="logo">
-                </div>
-                <div class="col-12 col-sm-12 col-md-8 col-lg-8 nav">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="wwa2.html">Home Page</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-12 col-md-2 col-lg-2 tradutor">
-                    <!--se estiver logado-->
-                    <div class="dropdown">
-                        <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-user-circle fa-2x"></i>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <!--listar dados-->
-                            <li><a class="dropdown-item" href="minhaconta.html"><i class="fas fa-user"></i> Meu
-                                    Perfil</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-user-cog"></i> Configurações</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Sair da
-                                    conta</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </section>
-    <script>
-        window.onload = () => {
-            let senha2 = 1234;
-            bt.disabled = true;
-            let validaForm = () => {
-                if (userPassword.value.length == 0 || userPassword2.value.length == 0)
-                    bt.disabled = true;
-                else
-                    bt.disabled = false;
-                bt.onclick = () => {
-                    if (userPassword.value != userPassword2.value) {
-                        let confirma = confirm('As senhas devem ser iguais');
-                    }
-                    else {
-                        if (senha2 != userPassword) {
-                            alert('Senha incorreta! Por favor, tente novamente')
-                        }
-                        else {
-                            console.clear()
-                            let confirma = confirm('Sua conta foi excluída com sucesso');
-                        }
-                    }
-                }
-            }
-            if (validaForm == false) {
-                alert('ERRO! Por favor, tente novamente')
-            }
-            userPassword.onchange = validaForm;
-            userPassword2.onchange = validaForm;
-        };
-
-    </script>
+    <link rel="stylesheet" href="../estilos/excluirconta.css">
 </head>
 
 <body>
+    <header class="container-fluid">
+        <div class="row">
+            <ul class="nav justify-content-center">
+                <a title="voltar para página inicial" href="../paginas/index.html">
+                    <img alt="logo escrito WWA" src="../imagens/wwa_icon_-_branco-removebg-preview.png" class="logo">
+                </a>
+            </ul>
+        </div>
+    </header>
     <main class="container">
-        <div id="senhaConfirmacao">
-            <div>
-                <h1>Excluir Conta</h1>
-            </div>
-            <div class="row g-3 align-items-center">
-                <div class="col-auto">
+        <div class="row">
+            <h2>Olá<p id="excluirContaUser"></p>é uma pena que você queira excluir sua conta!</h2>
+        </div>
+        <div class="senhaConfirmacao">
+            <div class="row">
+                <div class="col-11">
                     <label for="userPassword" class="col-form-label">
                         <h5>Digite sua senha:</h5>
                     </label>
                 </div>
-                <div class="col-auto">
-                    <input type="password" id="userPassword" class="form-control" name="userPassword"
-                        aria-describedby="passwordHelpInline">
+                <div class="col-1">
+                    <button id="olho"><i title="visualizar senha" class="fas fa-eye"></i></button>
                 </div>
             </div>
-            <span id="instrucoes"></span>
+            <div class="row">
+                <input type="password" id="userPassword" class="form-control" name="userPassword"
+                    aria-describedby="passwordHelpInline">
+            </div>
 
-            <div class="row g-3 align-items-center">
-                <div class="col-auto">
+            <div class="row">
+                <ul class="nav justify-content-start">
                     <label for="userPassword2" class="col-form-label">
                         <h5>Confirme sua senha:</h5>
                     </label>
-                </div>
-                <div class="col-auto">
-                    <input type="password" id="userPassword2" class="form-control" name="userPassword2"
-                        aria-describedby="passwordHelpInline">
-                </div>
+                </ul>
+            </div>
+            <div class="row">
+                <input type="password" id="userPassword2" class="form-control" name="userPassword2"
+                    aria-describedby="passwordHelpInline">
             </div>
             <span id="instrucoes"></span>
             <p>
@@ -122,6 +63,15 @@
             </div>
         </div>
     </main>
+    <footer class="rodape">
+        <div class="row">
+            <div class="col-12">
+                <p><i class="far fa-copyright"></i> Copyright 2021 - WWA World Wide Acessibility</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="../scripts/excluirconta.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 
 </body>
 

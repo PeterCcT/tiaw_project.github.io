@@ -1,216 +1,306 @@
-body{
-    background: rgb(231, 226, 226);
+html {
+    scroll-behavior: smooth;
+    height: 100vh;
+    width: 100vw;
 }
 
-.fundo{
-    background: rgb(71, 166, 255);
+*{
+    background-color: black;
 }
 
-.header{
-    background: rgb(71, 166, 255);
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.fundo {
+    background: transparent;
+}
+
+.fundo li a {
+    color: white;
+}
+
+.fundo li a:hover {
+    color: #FF6700;
+}
+
+.fundo .but_login a:hover {
+    color: #FF6700;
+    text-decoration: none;
+}
+
+.header {
     height: x;
     top: 0;
     padding: 0;
     margin: 0 0;
-    border-bottom: 1px solid rgb(214, 214, 214);
-    border-radius: 10px;
-
-
 }
-.logo{
-    width: 80px;
-    margin-left: 0px;
+
+.logo {
+    max-width: 80px;
 }
-.nav{
-    align-items: center;
+
+.nav {
     margin: 0 auto;
     text-decoration: none;
-    
-
 }
 
-.nav-item{
-    border: 1px solid rgb(52, 134, 211) !important;
-    background-color: rgba(253, 249, 249, 0.918);
+.nav-item {
     border-radius: 50px;
     margin: 5px;
     text-decoration: none;
     color: inherit
-
 }
 
-.tradutor{
-    height: 80px;
-    width: 0px;
-    right: 0px;
-}
-
-.but_login{
-    margin-top: 15px ;
+.but_login {
+    margin-top: 15px;
     margin-bottom: 20px;
 }
 
-.texto_wwa{
-    background-color: rgb(71, 166, 255);
-    padding: 30px;
-    border-radius: 25px;
+.but_login a {
+    color: white;
 }
 
-.btn{
+.titulo_inicio .texto_wwa {
+    padding: 30px;
+    color: whitesmoke;
+    font-size: 9em;
+}
+
+.apresentacao_inicio .texto_wwa {
+    font-size: 3em;
+}
+
+.btn {
     display: flex;
     justify-content: center;
 }
 
-
-.inicio{
-    background-color: rgb(223, 239, 255);
-    height: 500px;
+.inicio {
+    background-image: url("../imagens/pc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
 }
 
-
-.titulo_inicio{
+.titulo_inicio {
     padding-top: 130px;
     display: flex;
     justify-content: center;
 }
 
-.apresentacao_inicio{
-    display: flex;
+.apresentacao_inicio {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.textoMotivos {
+    text-align: center;
+    color: #FF6700;
+}
+
+#motivos p {
+    color: whitesmoke;
+}
+
+#motivos {
+    display: block;
+    width: 100%;
+    height: 150%;
+    color: white;
+}
+
+#amem {
+    display: inline-block;
+    width: 100%;
     justify-content: center;
+    text-align: center;
+    margin-top: 25px;
 }
 
-.interface2{
-    background-color: rgb(71, 166, 255);
+.interface2 {
+    background-color: transparent;
     border-radius: 50px;
 }
 
-.interface2__{
+.interface2__ {
     margin-top: 30px;
-    background: rgb(255, 255, 255);
-    margin-bottom: 40px !important;
+    background-image: linear-gradient(rgb(10, 18, 42), rgb(67, 127, 151));
 }
 
-.artigos{
-    background-color: white;
+#sobre {
+    background-image: linear-gradient(rgb(67, 127, 151), rgb(10, 18, 42));
+    /*background-image: linear-gradient(rgb(67, 127, 151), rgb(10, 18, 42));*/
+}
+
+.artigos {
+    background-image: url(/artigo3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
     border-radius: 50px;
 }
-.artigos_{
-    background-color: white;
-    padding-top: 80px;
+
+.artigos_ {
+    background-image: url(/artigo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 60px;
     padding-bottom: 80px;
     border-radius: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.imgs > img{
+.texto_acessibility {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.artigos a, .artigos a:hover, .artigos_ a, .artigos_ a:hover {
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.imgs>img {
     max-width: 70%;
     margin-top: 10px;
     margin-bottom: 5px;
-
 }
 
-.imgs{
+.imgs {
     margin-top: 30px;
     padding-top: 10px;
-    
-
 }
 
-.imgs2{
+.imgs2 {
     margin-bottom: 0px;
 }
 
-.imagens_conteudo{
+.imagens_conteudo {
     text-align: center;
 }
 
-.sobre{
-    margin-top: 50px;
+.sobre {
     margin-bottom: 50px;
-    background-color: rgb(135, 194, 250);
+    background-color: transparent;
 }
 
-.sobre_texto{
+.sobre_texto {
     padding-left: 40px !important;
     padding-top: 20px;
     padding-bottom: 40px;
 }
-.titulo{
+
+.titulo, p {
     padding-bottom: 5px;
+    color: white;
 }
 
-.sobre_redes > img {
-    width: 40px;
-    padding-top: 90px !important;
-    padding: 5px;
-}
-.sobre_redes a > img {
+.sobre_redes>img {
     width: 40px;
     padding-top: 90px !important;
     padding: 5px;
 }
 
-.sobre_redes{
+.sobre_redes a>img {
+    width: 40px;
+    padding-top: 90px !important;
+    padding: 5px;
+}
+
+.sobre_redes {
     text-align: center;
 }
 
-
-.footer{
+.footer {
     text-align: center;
     margin: 0 auto;
+    position: absolute;
+    bottom: 0;
 }
 
-.texto_footer{
+.texto_footer {
     margin-top: 25px;
 }
 
-.rodape{
-    background: rgb(71, 166, 255);
-    height: 90px;
+.rodape {
+    background: #0A122A;
+    color: white;
 }
 
-.logo_footer{
-    width: 80px;
-    padding: 5px;
-    margin-top: 8px;
+.logo_footer {
+    max-width: 20%;
 }
 
-@media screen and (max-width: 767px){
-    .logo{
-        text-align: center;
-    }
-    .tradutor{
+@media screen and (max-width: 767px) {
+    .tradutor {
         text-align: center;
         margin-top: 10px;
         height: 50px;
     }
-    .acesso{
+    .acesso {
         margin-top: 0px;
     }
+}
 
+@media screen and(max-width: 1199px) {
+    .but_registro .but_registro .but_registro {
+        display: none !important;
+    }
+    .footer{
+        position:none;
+    }
+}
 
+.dropdown a {
+    background-color: transparent;
+}
 
-
+.dropdown ul li a {
+    color: white;
+    background-color: transparent;
 }
 
 #dropdownMenuButton1 {
     align-items: center;
     margin-top: 10px;
+    color: white;
 }
 
-.informacoes{
+.informacoes {
     padding: 35px;
     margin: 15px;
+    color: white;
 }
 
-#tituloconf{
-    padding: 20px;
+#tituloconf {
+    padding-bottom: 20px;
     margin-bottom: 25px;
+    color: #FF6700;
 }
 
-#senhaConfirmacao{
+#infousuario {
+    color: whitesmoke;
+}
+
+.informacoes .btn {
+    color: white;
+}
+
+.informacoes h5 .btn:hover {
+    color: #FF6700;
+}
+
+.botaoExcluirConta {
+    margin-right: 0;
+}
+
+#senhaConfirmacao {
     align-items: center;
     margin: 0 auto;
     padding: 20px;

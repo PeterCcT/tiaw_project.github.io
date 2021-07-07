@@ -1,0 +1,45 @@
+* {
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.logo {
+    max-width: 8rem;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#olho {
+    color: white;
+    background-color: transparent;
+    border:transparent;
+}
+
+#excluirContaUser {
+    color: #FF6700;
+}
+
+.senhaConfirmacao {
+    border: 0.1rem solid rgba(255, 255, 255, 0.781);
+    padding: 3rem;
+    margin: 1.5rem;
+    border-radius: 0.9rem;
+}
+
+.rodape {
+    text-align: center;
+}

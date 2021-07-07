@@ -1,0 +1,42 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.logo {
+    max-width: 8rem;
+}
+
+.informacoes {
+    padding: 1.5rem;
+    margin: 1rem;
+    color: white;
+}
+
+#tituloconf {
+    margin-bottom: 3rem;
+    color: #FF6700;
+}
+
+#infousuario {
+    color: whitesmoke;
+}
+
+.informacoes .btn {
+    color: white;
+}
+
+.informacoes h5 .btn:hover {
+    color: #FF6700;
+}
+
+.botoes {
+    padding-top: 3rem;
+}
