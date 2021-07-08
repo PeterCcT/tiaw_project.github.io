@@ -1,6 +1,6 @@
 import { db } from '../../scripts_db/index.js'
 import { isUserPropertiesValid } from '../../scripts/utils/valid_user_properties.js'
-import {getLoggedUser} from './get_logged_user.js'
+import { getLoggedUser } from './get_logged_user.js'
 
 export function updateUserDb(email, updateValues) {
     try {
@@ -40,12 +40,30 @@ export function updateLoggedUser(updateValues) {
             for (const keyToUpdate in updateValues) {
                 user[keyToUpdate] = updateValues[keyToUpdate]
             }
-        }else{
+        } else {
             throw new Error()
         }
         sessionStorage.setItem('currentUser', JSON.stringify(user))
 
     } catch (error) {
         throw new Error(error)
+    }
+}
+
+export function deleteUserAccount(loggedUser) {
+    const { users } = db;
+    const quantityOfUsers = users.length;
+
+    const isUserEqual = (user) => user.email === loggedUser.email && user.password === loggedUser.password;
+
+    for (let index = 0; index < quantityOfUsers; index++) {
+        const user = users[index];
+
+        if (isUserEqual(user)) {
+            users.splice(index, 1);
+            localStorage.setItem('users', JSON.stringify(users));
+            sessionStorage.removeItem('currentUser');
+            break;
+        }
     }
 }

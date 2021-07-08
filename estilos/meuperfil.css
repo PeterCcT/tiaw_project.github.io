@@ -1,0 +1,97 @@
+* {
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.logo {
+    max-width: 8rem;
+}
+
+.rodape {
+    text-align: center;
+}
+
+h3{
+    color: #FF6700;
+}
+
+.imgPerfil {
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 13rem;
+    width: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main .categorie_box {
+    background-color: #212121;
+}
+
+main .categorie_box .categorie_container {
+    margin: auto;
+}
+
+main .categorie_box .categorie_container .categories_menu {
+    list-style: none;
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main .categorie_box .categorie_container .categories_menu .categorie_card {
+    background-color: whitesmoke;
+    margin: 2vh 0;
+    padding: 1rem 2rem;
+    border-radius: .3rem;
+}
+
+main .articles_box {
+    background-color: #212121;
+}
+
+main .articles_box .articles_container {
+    margin: auto;
+}
+
+main .articles_box .articles_container .articles_section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main .articles_box .articles_container .articles_section .articles_card {
+    background-color: whitesmoke;
+    margin: 2vh 0;
+    padding: 1rem 2rem;
+    border-radius: .3rem;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover{
+    color: #FF6700;
+}

@@ -20,7 +20,7 @@ export function findUserByPropertieAndValue(propertiesAndValues) {
                     if (userPropertieValue === searchValue)
                         matchedPropertiesValues++
                 }
-                console.log(quantityOfSearchProperties)
+                // console.log(quantityOfSearchProperties)
                 if (matchedPropertiesValues === quantityOfSearchProperties)
                     foundedUsers.push(user)
             }

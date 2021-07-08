@@ -40,3 +40,9 @@ body {
 .botoes {
     padding-top: 3rem;
 }
+
+textarea {
+    background-color: transparent;
+    color: white;
+    border-radius: 0.4em;
+}
