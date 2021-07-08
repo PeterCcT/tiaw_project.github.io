@@ -1,13 +1,13 @@
 html {
     scroll-behavior: smooth;
-    height: 100%;
-    width: 100%;
+    height         : 100%;
+    width          : 100%;
 }
 
 body {
     background-color: black !important;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-x      : hidden;
+    overflow-y      : scroll;
 }
 
 .logo {
@@ -16,13 +16,13 @@ body {
 
 .informacoes {
     padding: 1.5rem;
-    margin: 1rem;
-    color: white;
+    margin : 1rem;
+    color  : white;
 }
 
 #tituloconf {
     margin-bottom: 3rem;
-    color: #FF6700;
+    color        : #FF6700;
 }
 
 #infousuario {
@@ -37,12 +37,16 @@ body {
     color: #FF6700;
 }
 
+#sobre {
+    width: 100%;
+}
+
 .botoes {
     padding-top: 3rem;
 }
 
 textarea {
     background-color: transparent;
-    color: white;
-    border-radius: 0.4em;
+    color           : white;
+    border-radius   : 0.4em;
 }

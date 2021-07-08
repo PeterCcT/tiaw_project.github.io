@@ -1,19 +1,21 @@
 import { getLoggedUser } from './utils/get_logged_user.js'
+import { getAllUserFavoritesArticles } from './article/favorite_article.js'
 
 window.onload = () => {
 
     const user = getLoggedUser();
 
     if (user) {
-        const { name, email } = user;
-        const nameElement = document.getElementById('noome');
-        const emailElement = document.getElementById('email');
+        const { name, about } = user;
+
+        const nameElement = document.getElementById('nome');
         nameElement.innerHTML = name;
-        emailElement.innerHTML = email;
+
+        const aboutElement = document.getElementById('about')
+        aboutElement.innerHTML = about
+
+        getAllUserFavoritesArticles(user)
     } else {
         window.location.href = './login.html'
-    }
-    botaoSobre.onclick = () => {
-
     }
 }

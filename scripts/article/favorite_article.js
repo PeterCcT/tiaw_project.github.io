@@ -1,5 +1,36 @@
 import { getLoggedUser } from '../utils/get_logged_user.js'
 import { updateUserDb, updateLoggedUser } from '../utils/update_db.js'
+import { getArticleById } from './article.js'
+
+export function getAllUserFavoritesArticles(user) {
+    if (user) {
+        const { favoritiesArticles } = user
+        if (favoritiesArticles) {
+            const articleMainContainer = document.getElementById('articleMainContainer')
+
+            for (const favoriteArticleId of favoritiesArticles) {
+                const { title } = getArticleById(favoriteArticleId)
+                const articleElement = createFavoriteArticleElement(favoriteArticleId, title)
+
+                articleMainContainer.appendChild(articleElement)
+            }
+        }
+    }
+}
+
+function createFavoriteArticleElement(articleId, articleTitle) {
+    const mainElement = document.createElement('li')
+    const articleLink = document.createElement('a')
+
+    mainElement.className = 'categorie_card'
+    articleLink.href = `./articles/article.html?id${articleId}`
+    articleLink.text = articleTitle
+
+    mainElement.appendChild(articleLink)
+
+    return mainElement
+
+}
 
 export function favoriteArticle(id) {
     const user = getLoggedUser()
