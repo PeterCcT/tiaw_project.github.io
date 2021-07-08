@@ -102,10 +102,73 @@ main h1 {
     display: none;
 }
 
-.opa h1 {
+.textoMotivos {
+    text-align: center;
     color: black;
+    margin-top: 2rem;
+}
+
+.marketing {
+    width: 100%;
+}
+
+.artigos {
+    margin-top: 5rem;
+    background-color: black;
     display: flex;
+    flex-direction: column;
+    width: 100%;
     justify-content: center;
+}
+
+.artigos {
+    background-color: black;
+}
+
+.PrimeiroArtigo {
+    display: flex;
+    width: 100%;
+}
+
+.segundoArtigo {
+    display: flex;
+    width: 100%;
+}
+
+.textoArtigo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.textoSegundoArtigo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-left: 10rem;
+}
+
+.segundoArtigo p {
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    color: white;
+}
+
+.PrimeiroArtigo p {
+    display: flex;
+    width: 70%;
+    justify-content: left;
+    align-items: center;
+    color: white;
+}
+
+.artigos img {
+    width: 25rem;
+    margin: 5rem;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 858px) {
