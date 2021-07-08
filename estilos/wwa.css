@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin     : 0;
+    padding    : 0;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -9,38 +9,38 @@ html {
 }
 
 .bannerHome {
-    background-image: url(https://cdn.discordapp.com/attachments/834529037614317618/860632425919152188/t.jpg);
-    background-size: cover;
+    background-image   : url(https://cdn.discordapp.com/attachments/834529037614317618/860632425919152188/t.jpg);
+    background-size    : cover;
     background-position: center;
-    height: 42rem;
-    background-repeat: no-repeat;
-    display: grid;
+    height             : 42rem;
+    background-repeat  : no-repeat;
+    display            : grid;
 }
 
 .header {
-    display: flex;
-    width: 100%;
-    position: fixed;
+    display         : flex;
+    width           : 100%;
+    position        : fixed;
     background-color: black;
-    height: 7rem;
-    z-index: 999;
+    height          : 7rem;
+    z-index         : 999;
 }
 
 .logo {
-    width: 9rem;
+    width      : 9rem;
     margin-left: 3rem;
 }
 
 #login {
-    display: flex;
-    width: 100%;
+    display        : flex;
+    width          : 100%;
     justify-content: center;
-    list-style: none;
-    margin-top: 3rem;
+    list-style     : none;
+    align-items    : center;
 }
 
 #login a {
-    color: white;
+    color          : white;
     text-decoration: none;
 }
 
@@ -48,13 +48,30 @@ html {
     color: orangered;
 }
 
-.menuHeader {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    list-style: none;
-    margin-top: 2.6rem;
+.loginElement {
+    display: block;
+}
+
+.loggedElement {
+    display: none;
+}
+
+.loggedElement button {
     color: white;
+}
+
+.loggedElement ul {
+    background: black;
+    color     : white;
+}
+
+.menuHeader {
+    display        : flex;
+    width          : 100%;
+    justify-content: space-between;
+    list-style     : none;
+    margin-top     : 2.6rem;
+    color          : white;
 }
 
 #menu li a:hover {
@@ -62,9 +79,9 @@ html {
 }
 
 .tituloInicio {
-    display: flex;
-    width: 100%;
-    color: white;
+    display        : flex;
+    width          : 100%;
+    color          : white;
     justify-content: center;
 }
 
@@ -73,19 +90,19 @@ html {
 }
 
 .apresentacaoInicio {
-    top: 1rem;
-    display: flex;
-    width: 100%;
-    color: white;
+    top            : 1rem;
+    display        : flex;
+    width          : 100%;
+    color          : white;
     justify-content: center;
 }
 
 .apresentacao2Inicio {
-    display: flex;
-    width: 100%;
-    color: white;
-    top: 2rem;
-    text-align: center;
+    display        : flex;
+    width          : 100%;
+    color          : white;
+    top            : 2rem;
+    text-align     : center;
     justify-content: center;
 }
 
@@ -107,7 +124,7 @@ main h1 {
 
 .textoMotivos {
     text-align: center;
-    color: black;
+    color     : black;
     margin-top: 3rem;
 }
 
@@ -116,12 +133,12 @@ main h1 {
 }
 
 .artigos {
-    margin-top: 5rem;
+    margin-top      : 5rem;
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
+    display         : flex;
+    flex-direction  : column;
+    width           : 100%;
+    justify-content : center;
 }
 
 .artigos {
@@ -130,47 +147,47 @@ main h1 {
 
 .PrimeiroArtigo {
     display: flex;
-    width: 100%;
+    width  : 100%;
 }
 
 .segundoArtigo {
     display: flex;
-    width: 100%;
+    width  : 100%;
 }
 
 .textoArtigo {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display        : flex;
+    flex-direction : column;
+    width          : 100%;
     justify-content: center;
 }
 
 .textoSegundoArtigo {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display        : flex;
+    flex-direction : column;
+    width          : 100%;
     justify-content: center;
-    margin-left: 10rem;
+    margin-left    : 10rem;
 }
 
 .segundoArtigo p {
-    width: 100%;
+    width          : 100%;
     justify-content: right;
-    align-items: center;
-    color: white;
+    align-items    : center;
+    color          : white;
 }
 
 .PrimeiroArtigo p {
-    display: flex;
-    width: 70%;
+    display        : flex;
+    width          : 70%;
     justify-content: left;
-    align-items: center;
-    color: white;
+    align-items    : center;
+    color          : white;
 }
 
 .artigos img {
-    width: 25rem;
-    margin: 5rem;
+    width        : 25rem;
+    margin       : 5rem;
     border-radius: 5px;
 }
 
@@ -178,115 +195,130 @@ main h1 {
     .headerDesktop {
         display: none;
     }
+
     .headerMobile {
         display: flex;
     }
+
     .logo {
-        display: flex;
+        display    : flex;
         margin-left: 0;
     }
+
     .header {
         position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 999;
+        top     : 0;
+        width   : 100%;
+        z-index : 999;
     }
+
     .header nav {
         position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0
+        width   : 100%;
+        height  : 100%;
+        top     : 0
     }
+
     .menuHeader {
-        display: flex;
-        position: fixed;
-        flex-wrap: wrap;
-        align-content: center;
-        margin-top: 0%;
-        top: 0%;
-        left: 0%;
-        width: 100%;
-        height: 0%;
-        background-color: rgba(0, 0, 0, 0.836);
-        overflow: hidden;
-        overflow-x: hidden;
+        display           : flex;
+        position          : fixed;
+        flex-wrap         : wrap;
+        align-content     : center;
+        margin-top        : 0%;
+        top               : 0%;
+        left              : 0%;
+        width             : 100%;
+        height            : 0%;
+        background-color  : rgba(0, 0, 0, 0.836);
+        overflow          : hidden;
+        overflow-x        : hidden;
         -webkit-transition: height 0.3s;
-        -moz-transition: height 0.3s;
-        -ms-transition: height 0.3s;
-        -o-transition: height 0.3s;
-        transition: height 0.3s;
+        -moz-transition   : height 0.3s;
+        -ms-transition    : height 0.3s;
+        -o-transition     : height 0.3s;
+        transition        : height 0.3s;
     }
+
     .menuHeader li {
-        display: block;
-        width: 90%;
+        display    : block;
+        width      : 90%;
         margin-left: 0px;
     }
+
     .menuHeader li {
-        display: block;
+        display   : block;
         text-align: center;
-        width: 100%;
+        width     : 100%;
     }
+
     .menu-icon {
-        color: rgb(255, 255, 255);
-        display: block;
-        overflow: hidden;
-        z-index: 999;
-        height: inherit;
-        position: absolute;
-        top: 30px;
-        right: 30px;
+        color      : rgb(255, 255, 255);
+        display    : block;
+        overflow   : hidden;
+        z-index    : 999;
+        height     : inherit;
+        position   : absolute;
+        top        : 30px;
+        right      : 30px;
         line-height: 60px;
     }
+
     .menu-icon i {
         font-size: 40px;
     }
+
     #menuToggle:checked~label i:nth-child(2) {
         display: block;
     }
+
     #menuToggle:checked~label i:first-child {
         display: none;
     }
+
     #menuToggle:not(:checked)~label i:first-child {
         display: block;
     }
+
     #menuToggle:not(:checked)~label i:nth-child(2) {
         display: none;
     }
+
     #menuToggle:checked~ul {
         height: 100%;
     }
+
     .bannerHome {
-        background-image: url(https://cdn.discordapp.com/attachments/834529037614317618/860632425919152188/t.jpg);
-        background-size: cover;
+        background-image   : url(https://cdn.discordapp.com/attachments/834529037614317618/860632425919152188/t.jpg);
+        background-size    : cover;
         background-position: fixed;
-        background-repeat: no-repeat;
-        display: grid;
+        background-repeat  : no-repeat;
+        display            : grid;
     }
 }
 
 @media screen and (max-width: 700px) {
     .bannerHome {
-        background-image: url(https://cdn.discordapp.com/attachments/834529037614317618/860632425919152188/t.jpg);
-        background-size: cover;
+        background-image   : url(https://cdn.discordapp.com/attachments/834529037614317618/860632425919152188/t.jpg);
+        background-size    : cover;
         background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
+        background-repeat  : no-repeat;
+        width              : 100%;
     }
 }
 
 @media screen and (max-width: 360px) {
     .bannerHome {
-        background-image: url(https://cdn.discordapp.com/attachments/834529037614317618/860632425919152188/t.jpg);
-        background-position: relative;
+        background-image       : url(https://cdn.discordapp.com/attachments/834529037614317618/860632425919152188/t.jpg);
+        background-position    : relative;
         -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        width: max-content;
+        -moz-background-size   : cover;
+        -o-background-size     : cover;
+        background-size        : cover;
+        width                  : max-content;
     }
 }
 
 footer {
     background-color: black;
-    display: flex;
+    display         : flex;
 }

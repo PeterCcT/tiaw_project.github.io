@@ -5,11 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="module" src="../scripts/fill_database.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" href="../estilos/wwa.css">
     <script type="module" src="../scripts/article/favorite.js"></script>
+    <script type="module" src="../scripts/main_page_user_state.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -41,7 +45,25 @@
                     </ul>
                 </div>
                 <div id="login" class="col-4">
-                    <a href="../paginas/login.html">LOGIN</a>
+                    <a class="loginElement" href="../paginas/login.html">LOGIN</a>
+                    <div class="loggedElement col-12 col-sm-12 col-md-2 col-lg-2">
+                        <div class="dropdown">
+                            <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user-circle fa-2x"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-user"></i> Meu
+                                        Perfil</a>
+                                </li>
+                                <li><a class="dropdown-item" href="configuracoes.html"><i class="fas fa-user-cog"></i>
+                                        Configurações</a></li>
+                                <li id="logOut"><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>
+                                        Sair da conta</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -56,14 +78,17 @@
                     <nav class="nav">
                         <input type="checkbox" id="menuToggle">
                         <label for="menuToggle" class="menu-icon">
-                        <i class="fa fa-bars"></i>
-                        <i class="fa fa-times-circle"></i>
+                            <i class="fa fa-bars"></i>
+                            <i class="fa fa-times-circle"></i>
                         </label>
                         <ul class="menuHeader">
                             <li>MOTIVOS</li>
                             <li>ARTIGOS</li>
                             <li>SOBRE</li>
-                            <li><a href="#login"><strong>LOGIN</strong></a></li>
+                            <li><a class="loginElement" href="#login"><strong>LOGIN</strong></a></li>
+                            <li><a class="loggedElement" href="#login"><strong>Meu Perfil</strong></a></li>
+                            <li><a class="loggedElement" href="#login"><strong>Configurações</strong></a></li>
+                            <li><a class="loggedElement" href="#login"><strong>Sair da conta</strong></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -88,7 +113,8 @@
         </div>
         <div class="row">
             <div id="amem" class="col-sm-12 col-lg-3">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 1440 809.999993" version="1.2">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160"
+                    height="160" viewBox="0 0 1440 809.999993" version="1.2">
                     <title>Menina loira com bengala para cegos</title>
                     <defs>
                         <clipPath id="clip1">
@@ -155,11 +181,13 @@
 
 
                 <h2>Sociedade digital inclusiva</h2>
-                <p>Existem deficientes visuais que utilizam leitores de tela que só interpretam códigos acessíveis, isso torna o uso da web praticamente impossível quando os sites não têm acessibilidade.</p>
+                <p>Existem deficientes visuais que utilizam leitores de tela que só interpretam códigos acessíveis, isso
+                    torna o uso da web praticamente impossível quando os sites não têm acessibilidade.</p>
             </div>
             <!-- /.col-lg-3 -->
             <div id="amem" class="col-sm-12 col-lg-3">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 1440 809.999993" version="1.2">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160"
+                    height="160" viewBox="0 0 1440 809.999993" version="1.2">
                     <title>Gráfico que mostra a porcentagem de deficientes visuais no Brasil</title>
                     <g id="surface1">
                         <path
@@ -175,11 +203,13 @@
                 </svg>
 
                 <h2>Audiência potencial</h2>
-                <p>Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), existem mais de 6,5 milhões de pessoas com deficiência visual, um público comumente ignorados pela web.</p>
+                <p>Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), existem mais de 6,5 milhões de
+                    pessoas com deficiência visual, um público comumente ignorados pela web.</p>
             </div>
             <!-- /.col-lg-3 -->
             <div id="amem" class="col-sm-12 col-lg-3">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 1440 809.999993" version="1.2">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160"
+                    height="160" viewBox="0 0 1440 809.999993" version="1.2">
                     <title>Tela de computador, cores: roxo e amarelo</title>
                     <g id="surface1">
                         <path
@@ -235,11 +265,13 @@
                 </svg>
 
                 <h2>Melhorar o SEO do seu site</h2>
-                <p>SEO (Search Engine Optimization)<br>Sites acessíveis tendem a possuir uma posição melhor nas pesquisas do Google, ou seja, aparecem no topo da página.</p>
+                <p>SEO (Search Engine Optimization)<br>Sites acessíveis tendem a possuir uma posição melhor nas
+                    pesquisas do Google, ou seja, aparecem no topo da página.</p>
             </div>
             <!-- /.col-lg-3 -->
             <div id="amem" class="col-sm-12 col-lg-3">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 1440 809.999993" version="1.2">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160"
+                    height="160" viewBox="0 0 1440 809.999993" version="1.2">
                     <title>Olho azul com borda amarela</title>
                     <g id="surface1">
                         <path
@@ -265,7 +297,8 @@
                 </svg>
 
                 <h2>Padrões legislativos</h2>
-                <p>Lei n° 5.296 - estabelece normas gerais e critérios básicos para a promoção da acessibilidade das pessoas portadoras de deficiência ou com mobilidade reduzida.</p>
+                <p>Lei n° 5.296 - estabelece normas gerais e critérios básicos para a promoção da acessibilidade das
+                    pessoas portadoras de deficiência ou com mobilidade reduzida.</p>
             </div>
         </div>
     </div>
@@ -285,8 +318,11 @@
                 <img src="../imagens/artigo1.jpg" alt="">
                 <div class="textoArtigo">
                     <h3 style="color: rgb(219, 208, 208);">O que é acessibilidade?</h3>
-                    <p>Na era digital e no período em que a humanidade atinge o ápice do compartilhamento de informações e da democratização do conhecimento, incluir-se no meio e estar atento às notícias é tão fundamental como nunca antes foi. Nessa situação,
-                        é imprescindível que o acesso a ferramentas que possibilitam tal democratização seja igualitário - ou, com todos os esforços necessários, o mais transparente possível.</p>
+                    <p>Na era digital e no período em que a humanidade atinge o ápice do compartilhamento de informações
+                        e da democratização do conhecimento, incluir-se no meio e estar atento às notícias é tão
+                        fundamental como nunca antes foi. Nessa situação,
+                        é imprescindível que o acesso a ferramentas que possibilitam tal democratização seja igualitário
+                        - ou, com todos os esforços necessários, o mais transparente possível.</p>
                     <button style="width: 30%;
                     background-color: transparent;
                     border-color: white;
@@ -298,13 +334,17 @@
                 <div class="textoSegundoArtigo">
                     <h3 style="color: white;">Leitores de tela</h3>
                     <p>
-                        Um leitor de tela, instrumento utilizado para que usuários com algum tipo de obstáculo consigam se integrar na web e em outros ambientes digitais, é uma ferramenta que interage com o sistema operacional do dispositivo, interpreta todas as informações
-                        que contenham texto e transforma-as em uma resposta por áudio, voz, utilizando um sintetizador embutido.</p>
+                        Um leitor de tela, instrumento utilizado para que usuários com algum tipo de obstáculo consigam
+                        se integrar na web e em outros ambientes digitais, é uma ferramenta que interage com o sistema
+                        operacional do dispositivo, interpreta todas as informações
+                        que contenham texto e transforma-as em uma resposta por áudio, voz, utilizando um sintetizador
+                        embutido.</p>
                     <button style="width: 30%;
                     background-color: transparent;
                     border-color: white;
                     border-radius: 5px;
-                    color: white;"><a style="color: white;" href="../paginas/articles/view_articles.html">CARREGAR MAIS</a></button>
+                    color: white;"><a style="color: white;" href="../paginas/articles/view_articles.html">CARREGAR
+                            MAIS</a></button>
                 </div>
                 <img src="../imagens/artigo2.png" alt="">
             </div>
@@ -312,13 +352,17 @@
                 <img src="../imagens/artigo3.png" alt="">
                 <div class="textoArtigo">
                     <h3 style="color: white;">O que é Marketing Inclusivo?</h3>
-                    <p>Com o passar do tempo, a cultura do Marketing vem se alterando e, junto com ela, uma pauta delicada ganha mais espaço na área: a inclusão de outros grupos sociais - de alguma forma marginalizados no decorrer da história. Assim, o assunto
-                        passou a ser uma ferramenta de comunicação com o grande público por parte de grandes, médias e pequenas empresas e companhias: esse é o chamado marketing inclusivo.</p>
+                    <p>Com o passar do tempo, a cultura do Marketing vem se alterando e, junto com ela, uma pauta
+                        delicada ganha mais espaço na área: a inclusão de outros grupos sociais - de alguma forma
+                        marginalizados no decorrer da história. Assim, o assunto
+                        passou a ser uma ferramenta de comunicação com o grande público por parte de grandes, médias e
+                        pequenas empresas e companhias: esse é o chamado marketing inclusivo.</p>
                     <button style="width: 30%;
                     background-color: transparent;
                     border-color: white;
                     border-radius: 5px;
-                    color: white;"><a style="color: white;" href="../paginas/articles/view_articles.html">CARREGAR MAIS</a></button>
+                    color: white;"><a style="color: white;" href="../paginas/articles/view_articles.html">CARREGAR
+                            MAIS</a></button>
                 </div>
             </div>
         </div>
@@ -333,8 +377,12 @@
         justify-content: center;
         margin-top: 1rem;" class="row">
             <div class="col-10">
-                <p>Segundo a pesquisa sobre acessibilidade de sites brasileiros, feita pelo site Movimento Web para Todos e pela plataforma de dados BigDataCorp, a maior parte da web brasileira é inacessível aos 45 milhões de cidadãos que possuem alguma
-                    deficiência, foi concluído que menos de 1% dos sites tiveram sucesso em todos os testes de acessbilidade aplicados. Entre agosto de 2019 e abril de 2020, a variação foi mínima, de 0,61% para 0,74%. No Brasil tem quase 15 milhões de
+                <p>Segundo a pesquisa sobre acessibilidade de sites brasileiros, feita pelo site Movimento Web para
+                    Todos e pela plataforma de dados BigDataCorp, a maior parte da web brasileira é inacessível aos 45
+                    milhões de cidadãos que possuem alguma
+                    deficiência, foi concluído que menos de 1% dos sites tiveram sucesso em todos os testes de
+                    acessbilidade aplicados. Entre agosto de 2019 e abril de 2020, a variação foi mínima, de 0,61% para
+                    0,74%. No Brasil tem quase 15 milhões de
                     sites ativos e mais de 99% deles não são acessíveis.
                 </p>
             </div>
@@ -344,7 +392,9 @@
         width: 100%;
         justify-content: center;" class="row">
             <div class="col-10 sobre_texto">
-                <p>O projeto WWA-World Wide Acessibility é um trabalho criado por estudantes da PUC MINAS com o objetivo de proporcionar conhecimento para desenvolvedores de interfaces web sobre a acessibilidade de pessoas com deficiência visual na web,
+                <p>O projeto WWA-World Wide Acessibility é um trabalho criado por estudantes da PUC MINAS com o objetivo
+                    de proporcionar conhecimento para desenvolvedores de interfaces web sobre a acessibilidade de
+                    pessoas com deficiência visual na web,
                     de forma gratuita e através de artigos autorias e não autorias com autorização.</p>
             </div>
         </div>
@@ -356,7 +406,8 @@
                 width: 100%;
                 justify-content: center;
                 align-items: center;" class="col-lg-8">
-                    <p style="color: white;"><i class="far fa-copyright"></i> Copyright 2021 - WWA World Wide Acessibility</p>
+                    <p style="color: white;"><i class="far fa-copyright"></i> Copyright 2021 - WWA World Wide
+                        Acessibility</p>
                 </div>
                 <div style="display: flex;
                 width: 100%;
