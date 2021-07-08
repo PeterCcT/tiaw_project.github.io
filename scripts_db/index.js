@@ -66,7 +66,7 @@ const db = {
         author: 'Fulaninho',
         data: '26/07/2021',
         title: 'Como tornar seu site acessível',
-        category: 'categoria3',
+        category: 'categoria1',
         content: `As Diretrizes de Acessibilidade de Conteúdo da Web (WCAG) são desenvolvidas por meio\
         da W3E em cooperação com indivíduos e organizações em todo o mundo, com o objetivo\
         de fornecer um único padrão compartilhado para acessibilidade de conteúdo da Web que\
