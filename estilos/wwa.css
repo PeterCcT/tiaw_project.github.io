@@ -23,7 +23,6 @@ html {
     position: fixed;
     background-color: black;
     height: 7rem;
-    margin-bottom: 5rem;
     z-index: 999;
 }
 
@@ -54,8 +53,12 @@ html {
     width: 100%;
     justify-content: space-between;
     list-style: none;
-    margin-top: 3rem;
+    margin-top: 2.6rem;
     color: white;
+}
+
+#menu li a:hover {
+    color: orangered;
 }
 
 .tituloInicio {
@@ -105,7 +108,7 @@ main h1 {
 .textoMotivos {
     text-align: center;
     color: black;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .marketing {
@@ -281,4 +284,9 @@ main h1 {
         background-size: cover;
         width: max-content;
     }
+}
+
+footer {
+    background-color: black;
+    display: flex;
 }

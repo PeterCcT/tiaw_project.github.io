@@ -29,9 +29,15 @@
                 </div>
                 <div id="menu" class="col-4">
                     <ul class="menuHeader">
-                        <li>MOTIVOS</li>
-                        <li>ARTIGOS</li>
-                        <li>SOBRE</li>
+                        <li>
+                            <a style="color:white" class="nav-link" href="#motivos">MOTIVOS</a>
+                        </li>
+                        <li>
+                            <a style="color:white" class="nav-link" href="#artigos">ARTIGOS</a>
+                        </li>
+                        <li>
+                            <a style="color:white" class="nav-link" href="#sobre">SOBRE</a>
+                        </li>
                     </ul>
                 </div>
                 <div id="login" class="col-4">
@@ -76,7 +82,7 @@
         </div>
     </div>
 
-    <div class="container marketing">
+    <div id="motivos" class="container marketing">
         <div class="textoMotivos">
             <h1><strong>POR QUE DEIXAR O SEU SITE ACESSÍVEL?</strong></h1>
         </div>
@@ -264,7 +270,7 @@
         </div>
     </div>
 
-    <div class="artigosHome container-fluid" style="margin-left: 0;
+    <div id="artigos" class="artigosHome container-fluid" style="margin-left: 0;
     margin-right: 0;
     padding-left: 0;
     padding-right: 0;">
@@ -281,6 +287,11 @@
                     <h3 style="color: rgb(219, 208, 208);">O que é acessibilidade?</h3>
                     <p>Na era digital e no período em que a humanidade atinge o ápice do compartilhamento de informações e da democratização do conhecimento, incluir-se no meio e estar atento às notícias é tão fundamental como nunca antes foi. Nessa situação,
                         é imprescindível que o acesso a ferramentas que possibilitam tal democratização seja igualitário - ou, com todos os esforços necessários, o mais transparente possível.</p>
+                    <button style="width: 30%;
+                    background-color: transparent;
+                    border-color: white;
+                    border-radius: 5px;
+                    color: white;"><a style="color: white;" href="../paginas/articles/view_articles.html"></a></button>
                 </div>
             </div>
             <div class="segundoArtigo">
@@ -289,6 +300,11 @@
                     <p>
                         Um leitor de tela, instrumento utilizado para que usuários com algum tipo de obstáculo consigam se integrar na web e em outros ambientes digitais, é uma ferramenta que interage com o sistema operacional do dispositivo, interpreta todas as informações
                         que contenham texto e transforma-as em uma resposta por áudio, voz, utilizando um sintetizador embutido.</p>
+                    <button style="width: 30%;
+                    background-color: transparent;
+                    border-color: white;
+                    border-radius: 5px;
+                    color: white;"><a style="color: white;" href="../paginas/articles/view_articles.html">CARREGAR MAIS</a></button>
                 </div>
                 <img src="../imagens/artigo2.png" alt="">
             </div>
@@ -298,10 +314,59 @@
                     <h3 style="color: white;">O que é Marketing Inclusivo?</h3>
                     <p>Com o passar do tempo, a cultura do Marketing vem se alterando e, junto com ela, uma pauta delicada ganha mais espaço na área: a inclusão de outros grupos sociais - de alguma forma marginalizados no decorrer da história. Assim, o assunto
                         passou a ser uma ferramenta de comunicação com o grande público por parte de grandes, médias e pequenas empresas e companhias: esse é o chamado marketing inclusivo.</p>
+                    <button style="width: 30%;
+                    background-color: transparent;
+                    border-color: white;
+                    border-radius: 5px;
+                    color: white;"><a style="color: white;" href="../paginas/articles/view_articles.html">CARREGAR MAIS</a></button>
                 </div>
             </div>
         </div>
     </div>
+
+    <div id="sobre" style="margin-bottom: 3rem;" class="container sobre">
+        <div style="margin-top: 2rem;" class="textoMotivos">
+            <h1><strong>SOBRE NÓS</strong></h1>
+        </div>
+        <div style="display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;" class="row">
+            <div class="col-10">
+                <p>Segundo a pesquisa sobre acessibilidade de sites brasileiros, feita pelo site Movimento Web para Todos e pela plataforma de dados BigDataCorp, a maior parte da web brasileira é inacessível aos 45 milhões de cidadãos que possuem alguma
+                    deficiência, foi concluído que menos de 1% dos sites tiveram sucesso em todos os testes de acessbilidade aplicados. Entre agosto de 2019 e abril de 2020, a variação foi mínima, de 0,61% para 0,74%. No Brasil tem quase 15 milhões de
+                    sites ativos e mais de 99% deles não são acessíveis.
+                </p>
+            </div>
+        </div>
+
+        <div style="display: flex;
+        width: 100%;
+        justify-content: center;" class="row">
+            <div class="col-10 sobre_texto">
+                <p>O projeto WWA-World Wide Acessibility é um trabalho criado por estudantes da PUC MINAS com o objetivo de proporcionar conhecimento para desenvolvedores de interfaces web sobre a acessibilidade de pessoas com deficiência visual na web,
+                    de forma gratuita e através de artigos autorias e não autorias com autorização.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid footerDesktop">
+        <div class="footer">
+            <div class="row">
+                <div style="display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;" class="col-lg-8">
+                    <p style="color: white;"><i class="far fa-copyright"></i> Copyright 2021 - WWA World Wide Acessibility</p>
+                </div>
+                <div style="display: flex;
+                width: 100%;
+                justify-content: center;" class="col-4">
+                    <img src="../imagens/wwa_icon_-_branco-removebg-preview.png" class="logo" alt="">
+                </div>
+            </div>
+    </footer>
+
+
 </body>
 
 </html>
