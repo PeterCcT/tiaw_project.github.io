@@ -20,6 +20,11 @@ export function favoriteArticle(id) {
 }
 
 export function isAlreadyAnFavoriteArticle(id) {
-    const { favoritiesArticles } = getLoggedUser()
-    return favoritiesArticles.includes(id)
+    const  user  = getLoggedUser()
+    if (user)
+    {
+        const { favoritiesArticles } = user
+        return favoritiesArticles.includes(id)
+    }
+    return false
 }
