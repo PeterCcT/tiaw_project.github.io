@@ -6,67 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="module" src="../../scripts/fill_database.js"></script>
     <link rel="stylesheet" href="../../estilos/view_articles2.css">
 </head>
 
 <body>
     <div class="wrapper">
         <nav>
-            <input type="checkbox" id="show-search">
             <input type="checkbox" id="show-menu">
             <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
             <div class="content">
-                <div class="logo"><img src="../../imagens/logo_wwa_cortado.png" alt=""></div>
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../../imagens/logo_wwa_cortado.png" alt="">
+                    </a>    
+                </div>
                 <ul class="links">
                     <li>
                         <a href="#" class="desktop-link">Acessibilidade</a>
                         <input type="checkbox" id="show-features">
                         <label for="show-features">Features</label>
-                        <ul>
-                            <li><a href="article.html?id=1" id="artigo1">O que é Acessibilidade?</a></li>
-                            <li><a href="article.html?id=1234" id="artigo2">Como tornar seu site acessível</a></li>
-                            <li><a href="article.html?id=989" id="artigo3">Pensando no Conteúdo</a></li>
-                            <li><a href="article.html?id=101" id="artigo4">Como lidar com Arquivos</a></li>
-                            <li><a href="article.html?id=564ukd0sa" id="artigo5">A tag Alt</a></li>
-                        </ul>
+                        <ul id="accessibilityArticles"></ul>
                     </li>
 
                     <li>
                         <a href="#" class="desktop-link">Tecnologias</a>
                         <input type="checkbox" id="show-features">
                         <label for="show-features">Features</label>
-                        <ul>
-                            <li><a href="article.html?id=564uo000" id="artigo6">Leitores de Tela</a></li>
-                        </ul>
+                        <ul id="techArticles"></ul>
                     </li>
 
                     <li>
                         <a href="#" class="desktop-link">Tópicos em Acessibilidade</a>
                         <input type="checkbox" id="show-features">
                         <label for="show-features">Features</label>
-                        <ul>
-                            <li><a href="article.html?id=10171" id="artigo7">O que é Marketing Inclusivo?</a></li>
-                            <li><a href="article.html?id=564u989" id="artigo8">Visibilidade no Google</a></li>
-                        </ul>
+                        <ul id="topicInAccessibilityArticles"></ul>
                     </li>
                 </ul>
             </div>
-            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
             <form action="#" class="search-box">
                 <input type="text" placeholder="Type Something to Search..." required>
                 <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
             </form>
-            <span style="color: white;">LOGIN</span>
+            <a href="../login.html" style="color: white;">LOGIN</a>
         </nav>
-        
-    </div>
-
-    <div id="article_area">
 
     </div>
+    <div class="article_container">
+        <h1 class="none_article">Clique em algum tópico para acessar os artigos</h1>
+        <div class="article_content">
+            <article>
+                <h1 id="articleTitle"></h1>
+                <p id="articleContent"></p>
+            </article>
+        </div>
+        <div class="article_actions_container">
+            <ul class="article_actions">
+                <li class="article_action">
+                    <i id="favoritie_action" class="far fa-star"></i>
+                    <i id="unfavorite_action" class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-    <script type="module" src="../../scripts/utils/update_view_article.js"></script>
+
+    <script type="module" src="../../scripts/article/article_page.js"></script>
 </body>
 
 </html>

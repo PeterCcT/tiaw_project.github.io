@@ -22,7 +22,7 @@ const db = {
         author: "fulano",
         data: "01/02/2021",
         title: "O que é acessibilidade?",
-        category: "categoria1",
+        category: "accessibility",
         content: `Na era digital e no período em que a humanidade atinge o ápice do compartilhamento de\
         informações e da democratização do conhecimento, incluir-se no meio e estar atento às\
         notícias é tão fundamental como nunca antes foi. Nessa situação, é imprescindível que o\
@@ -66,7 +66,7 @@ const db = {
         author: 'Fulaninho',
         data: '26/07/2021',
         title: 'Como tornar seu site acessível',
-        category: 'categoria1',
+        category: 'accessibility',
         content: `As Diretrizes de Acessibilidade de Conteúdo da Web (WCAG) são desenvolvidas por meio\
         da W3E em cooperação com indivíduos e organizações em todo o mundo, com o objetivo\
         de fornecer um único padrão compartilhado para acessibilidade de conteúdo da Web que\
@@ -131,7 +131,7 @@ const db = {
         author: 'João',
         data: '26/07/2021',
         title: 'Visibilidade no Google',
-        category: 'categoria3',
+        category: 'topicInAccessibility',
         content:`Como forma de classificar a navegabilidade do site e fazer valer os princípios da\
         heurística, os buscadores, como o Google, em geral dão preferência para sites que\
         apresentam traços acessíveis para todos. Dessa forma, a maneira como o seu site é\
@@ -146,7 +146,7 @@ const db = {
         author: 'João',
         data: '26/07/2021',
         title: 'A tag alt',
-        category: 'categoria3',
+        category: 'accessibility',
         content:`Algumas alternativas para tornar seu site acessível já se encontram na própria área de\
         trabalho ou na tecnologia vanilla, de origem. Uma delas é a tag HTML ‘alt’, que referencia\
         um texto alternativo para, por exemplo, uma imagem que não pode ser mostrada na tela,\
@@ -166,7 +166,7 @@ const db = {
         author: 'João',
         data: '26/07/2021',
         title: 'Leitores de tela',
-        category: 'categoria3',
+        category: 'tech',
         content:`Um leitor de tela, instrumento utilizado para que usuários com algum tipo de obstáculo\
         consigam se integrar na web e em outros ambientes digitais, é uma ferramenta que interage\
         com o sistema operacional do dispositivo, interpreta todas as informações que contenham\
@@ -192,7 +192,7 @@ const db = {
         author: 'João',
         data: '26/07/2021',
         title: 'Pensando no conteúdo',
-        category: 'categoria3',
+        category: 'accessibility',
         content:`O código e os mecanismos de outras tecnologias não são os únicos fatores essenciais para\
         facilitar a acessibilidade. O conteúdo e a maneira como ele é apresentado é igualmente\
         importante, e há algumas coisas que escritores e desenvolvedores podem fazer para tornar\
@@ -223,7 +223,7 @@ const db = {
         author: 'João',
         data: '26/07/2021',
         title: 'Como lidar com arquivos',
-        category: 'categoria3',
+        category: 'accessibility',
         content:`O nome dos arquivos disponíveis no site (imagens, textos, vídeos, entre outros) também\
         deve ser simples e descrevê-los sucintamente, sendo relacionado com palavras-chave que\
         a página esteja promovendo. Assim, PDFs, arquivos Word, imagens jpeg, png, svgs, vídeos\
@@ -236,7 +236,7 @@ const db = {
         author: 'João',
         data: '26/07/2021',
         title: 'O que é Marketing Inclusivo?',
-        category: 'categoria3',
+        category: 'topicInAccessibility',
         content: `Com o passar do tempo, a cultura do Marketing vem se alterando e, junto com ela, uma\
         pauta delicada ganha mais espaço na área: a inclusão de outros grupos sociais - de alguma\
         forma marginalizados no decorrer da história. Assim, o assunto passou a ser uma\
